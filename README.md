@@ -1,6 +1,4 @@
-Awesome Quotes App
 Overview
-
 This Flutter application displays a list of quotes and famous dialogues. The main page shows a list of quotes with their authors. There is a button to navigate to the next page which displays a list of famous dialogues from various movies with their corresponding authors.
 
 Features
@@ -11,32 +9,29 @@ Code Structure
 Main Entry Point
 The entry point of the application is the main function, which initializes and runs the MaterialApp:
 
-dart
-Copy code
-void main() => runApp(MaterialApp(
+**void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
   home: QuoteList(),
-));
+));**
+
 Quote Class
 The Quote class represents a quote with a text and an author:
 
-dart
-Copy code
-class Quote {
+**class Quote {
   String text;
   String author;
 
   Quote({required this.text, required this.author});
 }
+**
+
 QuoteList Widget
 The QuoteList widget is a stateful widget that displays a list of quotes:
 
-dart
-Copy code
 class QuoteList extends StatefulWidget {
   const QuoteList({super.key});
 
-  @override
+**  @override
   State<QuoteList> createState() => _QuoteListState();
 }
 
@@ -110,24 +105,22 @@ class _QuoteListState extends State<QuoteList> {
       ),
     );
   }
-}
+}**
+
 Dialogue Class
 The Dialogue class represents a dialogue with a text and an author:
 
-dart
-Copy code
-class Dialogue {
+**class Dialogue {
   String text;
   String author;
 
   Dialogue({required this.text, required this.author});
-}
+}**
+
 NextPage Widget
 The NextPage widget is a stateless widget that displays a list of famous dialogues:
 
-dart
-Copy code
-class NextPage extends StatelessWidget {
+**class NextPage extends StatelessWidget {
   final List<Dialogue> dialogues = [
     Dialogue(text: 'I\'ll be back.', author: 'Terminator'),
     Dialogue(text: 'May the Force be with you.', author: 'Star Wars'),
@@ -184,8 +177,11 @@ class NextPage extends StatelessWidget {
     );
   }
 }
-How to Run
-Ensure you have Flutter installed on your system. For installation instructions, visit Flutter's official website.
+**
+
+How to Run:
+
+**Ensure you have Flutter installed on your system. For installation instructions, visit Flutter's official website.
 Clone or download this repository.
 Open the project in your preferred IDE (e.g., VSCode, Android Studio).
 Run flutter pub get to install dependencies.
@@ -195,7 +191,8 @@ Future Enhancements
 Add functionality to add new quotes and dialogues.
 Implement search functionality to find specific quotes or dialogues.
 Enhance UI/UX with better styling and animations.
-Add user authentication to save favorite quotes and dialogues.
+Add user authentication to save favorite quotes and dialogues.**
+
 Contributing
 Contributions are welcome! Please submit a pull request or open an issue to discuss the changes you want to make.
 
@@ -205,3 +202,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 Acknowledgements
 Flutter for the awesome framework.
 Quote and dialogue authors for their inspiring words.
+
