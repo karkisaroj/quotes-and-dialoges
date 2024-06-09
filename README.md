@@ -1,21 +1,21 @@
-Overview
-This Flutter application displays a list of quotes and famous dialogues. The main page shows a list of quotes with their authors. There is a button to navigate to the next page which displays a list of famous dialogues from various movies with their corresponding authors.
+#Overview
+#This Flutter application displays a list of quotes and famous dialogues. The main page shows a list of quotes with their authors. There is a button to navigate to the next page which displays a list of famous dialogues from various movies with their corresponding authors.
 
-Features
-List of quotes with authors
-List of famous dialogues with authors
-Navigation between pages using a FloatingActionButton
-Code Structure
-Main Entry Point
-The entry point of the application is the main function, which initializes and runs the MaterialApp:
+#Features
+#List of quotes with authors
+#List of famous dialogues with authors
+#Navigation between pages using a FloatingActionButton
+#Code Structure
+#Main Entry Point
+#The entry point of the application is the main function, which initializes and runs the MaterialApp:
 
 **void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
   home: QuoteList(),
 ));**
 
-Quote Class
-The Quote class represents a quote with a text and an author:
+#Quote Class
+#The Quote class represents a quote with a text and an author:
 
 **class Quote {
   String text;
@@ -25,11 +25,11 @@ The Quote class represents a quote with a text and an author:
 }
 **
 
-QuoteList Widget
-The QuoteList widget is a stateful widget that displays a list of quotes:
+#QuoteList Widget
+#The QuoteList widget is a stateful widget that displays a list of quotes:
 
-class QuoteList extends StatefulWidget {
-  const QuoteList({super.key});
+**class QuoteList extends StatefulWidget {
+  const QuoteList({super.key});**
 
 **  @override
   State<QuoteList> createState() => _QuoteListState();
@@ -107,8 +107,8 @@ class _QuoteListState extends State<QuoteList> {
   }
 }**
 
-Dialogue Class
-The Dialogue class represents a dialogue with a text and an author:
+#Dialogue Class
+#The Dialogue class represents a dialogue with a text and an author:
 
 **class Dialogue {
   String text;
@@ -117,8 +117,8 @@ The Dialogue class represents a dialogue with a text and an author:
   Dialogue({required this.text, required this.author});
 }**
 
-NextPage Widget
-The NextPage widget is a stateless widget that displays a list of famous dialogues:
+#NextPage Widget
+#The NextPage widget is a stateless widget that displays a list of famous dialogues:
 
 **class NextPage extends StatelessWidget {
   final List<Dialogue> dialogues = [
@@ -179,7 +179,7 @@ The NextPage widget is a stateless widget that displays a list of famous dialogu
 }
 **
 
-How to Run:
+#How to Run:
 
 **Ensure you have Flutter installed on your system. For installation instructions, visit Flutter's official website.
 Clone or download this repository.
@@ -193,10 +193,10 @@ Implement search functionality to find specific quotes or dialogues.
 Enhance UI/UX with better styling and animations.
 Add user authentication to save favorite quotes and dialogues.**
 
-Contributing
+#Contributing
 Contributions are welcome! Please submit a pull request or open an issue to discuss the changes you want to make.
 
-License
+#License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 Acknowledgements
